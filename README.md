@@ -23,9 +23,11 @@ El simulador permite a los usuarios registrar sus datos personales y elegir una 
 
 - Se implementa un ciclo `while` que permite registrar múltiples turnos consecutivamente según la decisión del usuario.
 
+- Se utiliza un cuadro de diálogo `confirm` para confirmar acciones como registrar un nuevo turno.
+
 - Se realiza la salida de datos por consola (`console.log`), mostrando el listado completo de turnos registrados.
 
-- Se muestran mensajes  mediante cuadros `alert`, uno de ellos concatenando texto y variables.
+- Se muestran mensajes mediante cuadros `alert`, algunos de ellos concatenando texto y variables.
 
 
 
@@ -33,9 +35,9 @@ El simulador permite a los usuarios registrar sus datos personales y elegir una 
 
 - La lógica del programa se organiza en tres funciones principales que representan el flujo entrada- procesamiento -salida de datos.
 
-- Las funciones están declaradas de manera tradicional para facilitar su lectura, pero incluí en dos de ellas comentarios con sintaxis alternativas utilizando en u caso flecha y en otro anonima. Utilice funciones clasicas para poder aprender mejor mediante comparación (un esquema mas homogeneo) y compararlas con claridad.
+- Las funciones están declaradas de manera tradicional para facilitar su lectura, pero incluí en dos de ellas comentarios con sintaxis alternativas utilizando en un caso funcion flecha y en otro funcion anonima. Utilice funciones clasicas para poder aprender mejor mediante comparación (un esquema mas homogeneo) y compararlas con claridad.
 
 
 ## Nota
 
-El simulador está diseñado para ser escalable en futuras entregas.
+Es mi idea que el simulador pueda ser escalable en futuras entregas mediante los temas que vayamos dando.

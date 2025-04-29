@@ -1,5 +1,5 @@
 // ==============================
-// Primera Preentrega - Turnero para casa de préstamos
+// CODERHOUSE - Javascript - Entregable 1 - Turnero para casa de préstamos
 // ==============================
 
 // Declaración de variable con array para almacenar los turnos
@@ -82,12 +82,13 @@ let continuarIngresando = "si";
 
 // Bucle para ingresar múltiples turnos
 while (continuarIngresando === "si") {
-  let confirmar = confirm("¿Seguro que deseas registrar un nuevo turno?");
-  if (confirmar) {
-    let nuevoTurno = solicitarDatosTurno(); // Entrada
-    registrarTurno(nuevoTurno);            // Procesamiento
+  let confirmar = confirm("¿Deseas registrar un nuevo turno?");
+  if (!confirmar) {
+    break; // Sale del bucle si el usuario selecciona "Cancelar"
   }
-  continuarIngresando = prompt("¿querés ingresar otro turno? (si / no)");
+  let nuevoTurno = solicitarDatosTurno(); // Entrada
+  registrarTurno(nuevoTurno);            // Procesamiento
+  continuarIngresando = prompt("¿Querés ingresar otro turno? (si / no)");
 }
 
 // Muestro resultados finales por consola
