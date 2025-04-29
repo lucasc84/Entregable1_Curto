@@ -57,8 +57,7 @@ function registrarTurno(datos) {
   ) {
 
     turnos.push(datos); // Agrego los datos al array vacio de turnos y emito alerta
-    alert("✅ Turno registrado con éxito para " + datos[0]);
-  } else {
+    alert("✅ Turno registrado con éxito para " + datos[0] + " en la sucursal " + datos[4] + ".");  } else {
     // Si falta algún dato, no agrego datos al array y emito alerta
     alert("⚠️ Error: Faltan datos o la sucursal es incorrecta.");
   }
@@ -83,9 +82,12 @@ let continuarIngresando = "si";
 
 // Bucle para ingresar múltiples turnos
 while (continuarIngresando === "si") {
-  let nuevoTurno = solicitarDatosTurno();       // Entrada
-  registrarTurno(nuevoTurno);                   // Procesamiento
-  continuarIngresando = prompt("¿Querés ingresar otro turno? (si / no)");
+  let confirmar = confirm("¿Seguro que deseas registrar un nuevo turno?");
+  if (confirmar) {
+    let nuevoTurno = solicitarDatosTurno(); // Entrada
+    registrarTurno(nuevoTurno);            // Procesamiento
+  }
+  continuarIngresando = prompt("¿querés ingresar otro turno? (si / no)");
 }
 
 // Muestro resultados finales por consola
